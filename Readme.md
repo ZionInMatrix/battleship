@@ -1,4 +1,4 @@
-# Battle Ship V1.0. Console-game in Java.
+# Battle Ship V1.0. Console-game in Java 1VS1.
 
 ## Game description:
 The objective of the game is figuring out where these ships are placed and hit them. Each damaged part of the ship is displayed as "X" 
