@@ -46,7 +46,7 @@ public class WarShip {
                 System.out.println("START THE NEW GAME");
             }
         } catch (IOException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
+            System.out.println("Start the Game !!!");
         }
 
         System.out.println("Player #1, please enter your name:");
