@@ -43,10 +43,10 @@ public class WarShip {
                     }
                 }
             } else {
-                System.out.println("START THE NEW GAME");
+                System.out.println("START !!!");
             }
         } catch (IOException fileNotFoundException) {
-            System.out.println("Start the Game !!!");
+            System.out.println("START !!!");
         }
 
         System.out.println("Player #1, please enter your name:");
