@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>AdditivesAndBeverages</OriginalElement>
+  <nodes>
+    <node x="1610.0" y="355.0">AdditivesAndBeverages.Regular</node>
+    <node x="691.0" y="234.0">AdditivesAndBeverages.Beverage</node>
+    <node x="144.27807239057233" y="696.0">AdditivesAndBeverages.HotChocolate</node>
+    <node x="932.1666666666666" y="707.0">AdditivesAndBeverages.Soup</node>
+    <node x="643.3578703703704" y="0.0">AdditivesAndBeverages.Additive</node>
+    <node x="386.0" y="355.0">AdditivesAndBeverages.BlackTea</node>
+    <node x="1161.0" y="366.5">AdditivesAndBeverages.Sugar</node>
+    <node x="1466.0" y="366.5">AdditivesAndBeverages.Milk</node>
+    <node x="475.25" y="696.0">AdditivesAndBeverages.Tea</node>
+    <node x="975.0" y="366.5">AdditivesAndBeverages.ChickenBouillon</node>
+    <node x="0.0" y="378.0">AdditivesAndBeverages.Cinnamon</node>
+    <node x="145.0" y="355.0">AdditivesAndBeverages.PeppermintHotChocolate</node>
+    <node x="1305.0" y="355.0">AdditivesAndBeverages.Decaf</node>
+    <node x="932.1666666666666" y="890.0">AdditivesAndBeverages.GarlicSoup</node>
+    <node x="122.77807239057233" y="890.0">AdditivesAndBeverages.OriginalHotChocolate</node>
+    <node x="547.0" y="366.5">AdditivesAndBeverages.Lemon</node>
+    <node x="1318.0" y="696.0">AdditivesAndBeverages.Coffee</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="AdditivesAndBeverages.Regular" target="AdditivesAndBeverages.Coffee">
+      <point x="0.0" y="50.0" />
+      <point x="1680.5" y="666.0" />
+      <point x="1455.7" y="666.0" />
+      <point x="56.700000000000045" y="-72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Tea" target="AdditivesAndBeverages.Beverage">
+      <point x="30.375" y="-72.0" />
+      <point x="586.625" y="656.0" />
+      <point x="773.5" y="656.0" />
+      <point x="-49.5" y="171.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Milk" target="AdditivesAndBeverages.Additive">
+      <point x="-31.0" y="-38.5" />
+      <point x="1497.0" y="174.0" />
+      <point x="800.5396885521886" y="174.0" />
+      <point x="66.18181818181824" y="72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Coffee" target="AdditivesAndBeverages.Beverage">
+      <point x="-56.69999999999993" y="-72.0" />
+      <point x="1342.3000000000002" y="636.0" />
+      <point x="938.5" y="636.0" />
+      <point x="115.5" y="171.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Decaf" target="AdditivesAndBeverages.Coffee">
+      <point x="0.0" y="50.0" />
+      <point x="1375.5" y="606.0" />
+      <point x="1390.9" y="606.0" />
+      <point x="-8.100000000000023" y="-72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.OriginalHotChocolate" target="AdditivesAndBeverages.HotChocolate">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.BlackTea" target="AdditivesAndBeverages.Tea">
+      <point x="0.0" y="50.0" />
+      <point x="456.5" y="606.0" />
+      <point x="525.875" y="606.0" />
+      <point x="-30.375" y="-72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.GarlicSoup" target="AdditivesAndBeverages.Soup">
+      <point x="-47.0" y="-50.0" />
+      <point x="-47.0" y="61.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.PeppermintHotChocolate" target="AdditivesAndBeverages.HotChocolate">
+      <point x="0.0" y="50.0" />
+      <point x="255.0" y="616.0" />
+      <point x="211.77807239057233" y="616.0" />
+      <point x="-13.5" y="-72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Sugar" target="AdditivesAndBeverages.Additive">
+      <point x="-31.0" y="-38.5" />
+      <point x="1192.0" y="194.0" />
+      <point x="767.4487794612794" y="194.0" />
+      <point x="33.09090909090901" y="72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Soup" target="AdditivesAndBeverages.Beverage">
+      <point x="-28.19999999999999" y="-61.0" />
+      <point x="974.4666666666667" y="656.0" />
+      <point x="872.5" y="656.0" />
+      <point x="49.5" y="171.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.HotChocolate" target="AdditivesAndBeverages.Beverage">
+      <point x="67.5" y="-72.0" />
+      <point x="292.77807239057233" y="646.0" />
+      <point x="740.5" y="646.0" />
+      <point x="-82.5" y="171.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Lemon" target="AdditivesAndBeverages.Additive">
+      <point x="-31.0" y="-38.5" />
+      <point x="578.0" y="204.0" />
+      <point x="701.2669612794613" y="204.0" />
+      <point x="-33.09090909090912" y="72.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.ChickenBouillon" target="AdditivesAndBeverages.Soup">
+      <point x="55.33333333333337" y="38.5" />
+      <point x="1113.3333333333335" y="666.0" />
+      <point x="1059.0666666666666" y="666.0" />
+      <point x="56.39999999999998" y="-61.0" />
+    </edge>
+    <edge source="AdditivesAndBeverages.Cinnamon" target="AdditivesAndBeverages.Additive">
+      <point x="-31.25" y="-27.0" />
+      <point x="31.25" y="174.0" />
+      <point x="651.6305976430976" y="174.0" />
+      <point x="-82.72727272727275" y="72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5132693393562959" x="875.4999999999999" y="495.0" />
+  <SelectedNodes>
+    <node>AdditivesAndBeverages.Coffee</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

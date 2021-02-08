@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>GUIModelOfVendingMachine</OriginalElement>
+  <nodes>
+    <node x="151.27943121693121" y="596.0">GUIModelOfVendingMachine.Bank</node>
+    <node x="10.5" y="1578.0">GUIModelOfVendingMachine.CoffeePotView</node>
+    <node x="127.13029100529103" y="2662.0">GUIModelOfVendingMachine.CoffeePotController</node>
+    <node x="193.82109788359787" y="1032.0">GUIModelOfVendingMachine.CoffeePotModel</node>
+    <node x="93.15443121693124" y="270.0">GUIModelOfVendingMachine.Bank.CoinInventory</node>
+    <node x="186.33068783068788" y="0.0">GUIModelOfVendingMachine.Coin</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GUIModelOfVendingMachine.Bank.CoinInventory" target="GUIModelOfVendingMachine.Bank">
+      <point x="113.25" y="138.0" />
+      <point x="357.40443121693124" y="571.0" />
+      <point x="343.77943121693124" y="571.0" />
+      <point x="55.00000000000003" y="-193.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotController" target="GUIModelOfVendingMachine.Coin">
+      <point x="-122.57142857142856" y="-116.0" />
+      <point x="147.5588624338625" y="2642.0" />
+      <point x="0.0" y="2642.0" />
+      <point x="0.0" y="230.0" />
+      <point x="201.24735449735456" y="230.0" />
+      <point x="-74.58333333333331" y="105.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotController" target="GUIModelOfVendingMachine.CoffeePotModel">
+      <point x="81.71428571428568" y="-116.0" />
+      <point x="351.8445767195767" y="2632.0" />
+      <point x="406.0" y="2632.0" />
+      <point x="406.0" y="1553.0" />
+      <point x="384.4460978835979" y="1553.0" />
+      <point x="38.125" y="248.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotView" target="GUIModelOfVendingMachine.CoffeePotModel">
+      <point x="128.33333333333337" y="-512.0" />
+      <point x="331.33333333333337" y="1553.0" />
+      <point x="308.1960978835979" y="1553.0" />
+      <point x="-38.125" y="248.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotController" target="GUIModelOfVendingMachine.CoffeePotView">
+      <point x="-81.71428571428572" y="-116.0" />
+      <point x="188.41600529100532" y="2632.0" />
+      <point x="58.625" y="2632.0" />
+      <point x="-144.375" y="512.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotModel" target="GUIModelOfVendingMachine.Bank">
+      <point x="-101.66666666666669" y="-248.0" />
+      <point x="244.6544312169312" y="1007.0" />
+      <point x="220.02943121693121" y="1007.0" />
+      <point x="-68.75" y="193.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.Bank" target="GUIModelOfVendingMachine.Coin">
+      <point x="110.00000000000003" y="-193.0" />
+      <point x="398.77943121693124" y="571.0" />
+      <point x="405.65443121693124" y="571.0" />
+      <point x="405.65443121693124" y="240.0" />
+      <point x="320.5806878306878" y="240.0" />
+      <point x="44.749999999999936" y="105.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotModel" target="GUIModelOfVendingMachine.Coin">
+      <point x="101.66666666666669" y="-248.0" />
+      <point x="447.98776455026456" y="1007.0" />
+      <point x="436.77943121693124" y="1007.0" />
+      <point x="436.77943121693124" y="230.0" />
+      <point x="350.41402116402116" y="230.0" />
+      <point x="74.58333333333331" y="105.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.Bank" target="GUIModelOfVendingMachine.Bank.CoinInventory">
+      <point x="-109.99999999999997" y="-193.0" />
+      <point x="178.77943121693124" y="571.0" />
+      <point x="130.90443121693124" y="571.0" />
+      <point x="-113.25" y="138.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotView" target="GUIModelOfVendingMachine.CoffeePotController">
+      <point x="48.125" y="512.0" />
+      <point x="251.125" y="2642.0" />
+      <point x="270.13029100529104" y="2642.0" />
+      <point x="0.0" y="-116.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.Bank.CoinInventory" target="GUIModelOfVendingMachine.Coin">
+      <point x="-75.5" y="-138.0" />
+      <point x="168.65443121693124" y="250.0" />
+      <point x="260.9140211640212" y="250.0" />
+      <point x="-14.916666666666686" y="105.0" />
+    </edge>
+    <edge source="GUIModelOfVendingMachine.CoffeePotView" target="GUIModelOfVendingMachine.Coin">
+      <point x="-128.33333333333337" y="-512.0" />
+      <point x="74.66666666666663" y="1553.0" />
+      <point x="51.999338624338634" y="1553.0" />
+      <point x="51.999338624338634" y="240.0" />
+      <point x="231.08068783068788" y="240.0" />
+      <point x="-44.75" y="105.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3918325326012354" x="254.5" y="693.3149413207217" />
+  <SelectedNodes>
+    <node>GUIModelOfVendingMachine.Bank</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

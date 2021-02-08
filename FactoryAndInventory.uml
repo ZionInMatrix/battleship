@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>FactoryAndInventory</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">FactoryAndInventory.BeverageFactory</node>
+    <node x="38.0" y="370.0">FactoryAndInventory.BeverageFactory.AdditiveInventory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="FactoryAndInventory.BeverageFactory.AdditiveInventory" target="FactoryAndInventory.BeverageFactory">
+      <point x="-64.80000000000004" y="-83.0" />
+      <point x="135.19999999999996" y="345.0" />
+      <point x="120.0" y="345.0" />
+      <point x="-80.0" y="160.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="200.0" y="268.0" />
+  <SelectedNodes>
+    <node>FactoryAndInventory.BeverageFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
