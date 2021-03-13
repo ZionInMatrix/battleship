@@ -14,9 +14,6 @@ public class WarShip {
     static int[][] monitor2;
     static final String PathToCSV = System.getProperty("user.dir") + "/src/SaveGame.csv";
 
-    public WarShip() {
-    }
-
     public static void main(String[] args) {
         try {
             String readData;
