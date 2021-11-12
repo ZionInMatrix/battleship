@@ -12,11 +12,15 @@ public class WarShip {
     static int[][] battlefield2;
     static int[][] monitor1;
     static int[][] monitor2;
-    static final String PathToCSV = System.getProperty("user.dir") + "/src/SaveGame.csv";
+    static final String PathToCSV = System.getProperty("user.dir") + "/src/SavedGame.csv";
 
     public static void main(String[] args) {
+        playGame();
+    }
+
+    public static void playGame() {
+        String readData;
         try {
-            String readData;
             BufferedReader br = new BufferedReader(new FileReader(PathToCSV));
 
             if ((readData = br.readLine()) != null) {
@@ -30,7 +34,6 @@ public class WarShip {
                         makeTurn(playerName1, monitor1, battlefield2);
                         if (isWinCondition()) {
                             break;
-
                         }
                         makeTurn(playerName2, monitor2, battlefield1);
                         if (isWinCondition()) {
@@ -39,9 +42,11 @@ public class WarShip {
                         writeToCSV(PathToCSV);
                     }
                 }
+
             } else {
                 System.out.println("START !!!");
             }
+
         } catch (IOException fileNotFoundException) {
             System.out.println("START !!!");
         }
@@ -54,16 +59,17 @@ public class WarShip {
         placeShips(playerName2, battlefield2);
 
         while (true) {
+
             makeTurn(playerName1, monitor1, battlefield2);
             if (isWinCondition()) {
                 break;
-
             }
+
             makeTurn(playerName2, monitor2, battlefield1);
             if (isWinCondition()) {
                 break;
-
             }
+
             writeToCSV(PathToCSV);
         }
     }
