@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class WarShip {
+public class Warship {
 
     private static String playerName1 = "Player #1";
     private static String playerName2 = "Player #2";
