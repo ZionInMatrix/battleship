@@ -1,18 +1,24 @@
-package War;
+package war;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class WarShip {
-    static String playerName1 = "Player #1";
-    static String playerName2 = "Player #2";
-    static Scanner scanner;
-    static int[][] battlefield1;
-    static int[][] battlefield2;
-    static int[][] monitor1;
-    static int[][] monitor2;
-    static final String PathToCSV = System.getProperty("user.dir") + "/src/SavedGame.csv";
+
+    private static String playerName1 = "Player #1";
+    private static String playerName2 = "Player #2";
+    private static final Scanner scanner;
+    private static int[][] battlefield1;
+    private static int[][] battlefield2;
+    private static int[][] monitor1;
+    private static int[][] monitor2;
+    private static final String PATH_TO_CSV = System.getProperty("user.dir") + "/src/SavedGame.csv";
 
     public static void main(String[] args) {
         playGame();
@@ -21,25 +27,30 @@ public class WarShip {
     public static void playGame() {
         String readData;
         try {
-            BufferedReader br = new BufferedReader(new FileReader(PathToCSV));
+            BufferedReader br = new BufferedReader(new FileReader(PATH_TO_CSV));
 
-            if ((readData = br.readLine()) != null) {
+            if (br.readLine() != null) {
                 System.out.println("- Do you want to download the last saved game? Write 'yes' !" +
                         "\n- Any key will start the 'new game' ! ");
                 readData = scanner.nextLine();
 
                 if (readData.equals("yes")) {
-                    readFromCSV(PathToCSV);
+                    readFromCSV(PATH_TO_CSV);
+
                     while (true) {
                         makeTurn(playerName1, monitor1, battlefield2);
+
                         if (isWinCondition()) {
                             break;
                         }
+
                         makeTurn(playerName2, monitor2, battlefield1);
+
                         if (isWinCondition()) {
                             break;
                         }
-                        writeToCSV(PathToCSV);
+
+                        writeToCSV(PATH_TO_CSV);
                     }
                 }
 
@@ -70,7 +81,7 @@ public class WarShip {
                 break;
             }
 
-            writeToCSV(PathToCSV);
+            writeToCSV(PATH_TO_CSV);
         }
     }
 
