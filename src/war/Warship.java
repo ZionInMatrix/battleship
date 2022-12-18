@@ -13,7 +13,7 @@ public class Warship {
 
     private static String playerName1 = "Player #1";
     private static String playerName2 = "Player #2";
-    private static final Scanner scanner;
+    private static final Scanner SCANNER;
     private static int[][] battlefield1;
     private static int[][] battlefield2;
     private static int[][] monitor1;
@@ -30,9 +30,8 @@ public class Warship {
             BufferedReader br = new BufferedReader(new FileReader(PATH_TO_CSV));
 
             if (br.readLine() != null) {
-                System.out.println("- Do you want to download the last saved game? Write 'yes' !" +
-                        "\n- Any key will start the 'new game' ! ");
-                readData = scanner.nextLine();
+                System.out.println("- Do you want to download the last saved game? Write 'yes' !" + "\n- Any key will start the 'new game' ! ");
+                readData = SCANNER.nextLine();
 
                 if (readData.equals("yes")) {
                     readFromCSV(PATH_TO_CSV);
@@ -63,9 +62,9 @@ public class Warship {
         }
 
         System.out.println("Player #1, please enter your name:");
-        playerName1 = scanner.nextLine();
+        playerName1 = SCANNER.nextLine();
         System.out.println("Player #2, please enter your name:");
-        playerName2 = scanner.nextLine();
+        playerName2 = SCANNER.nextLine();
         placeShips(playerName1, battlefield1);
         placeShips(playerName2, battlefield2);
 
@@ -90,12 +89,10 @@ public class Warship {
             FileWriter fw = new FileWriter(pathToCSVFile);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
-            pw.println(playerName1 + ";" +
-                    Arrays.deepToString(battlefield1) + ";" +
-                    Arrays.deepToString(monitor1) + ";" +
-                    playerName2 + ";" +
-                    Arrays.deepToString(battlefield1) + ";" +
-                    Arrays.deepToString(monitor2));
+            pw.println(playerName1 + ";" + Arrays.deepToString(battlefield1) +
+                    ";" + Arrays.deepToString(monitor1) +
+                    ";" + playerName2 + ";" + Arrays.deepToString(battlefield1) +
+                    ";" + Arrays.deepToString(monitor2));
             pw.flush();
             pw.close();
         } catch (Exception e) {
@@ -127,11 +124,10 @@ public class Warship {
 
     public static int[][] parseStringToMatrix(String stringToParse) {
 
-        String[] valuesOfMatrixInArray = stringToParse
-                .replaceAll("\\[", "")
-                .replaceAll("\\]", "")
-                .replaceAll(" ", "")
-                .split(",");
+        String[] valuesOfMatrixInArray =
+                stringToParse.replaceAll("\\[", "")
+                        .replaceAll("]", "")
+                        .replaceAll(" ", "").split(",");
         int[][] resultMatrix = new int[10][10];
 
         for (int i = 0; i < 10; i++) {
@@ -144,35 +140,32 @@ public class Warship {
 
     public static void placeShips(String playerName, int[][] battlefield) {
         int deck = 4;
-        while (true) {
-            while (deck >= 1) {
-                System.out.println();
-                System.out.println(playerName + ", please place your " + deck +
-                        "-deck ship on the battlefield:");
-                System.out.println();
-                drawField(battlefield);
-                System.out.println("Please enter OX coordinate:");
-                int x = scanner.nextInt();
-                System.out.println("Please enter OY coordinate:");
-                int y = scanner.nextInt();
-                System.out.println("Choose direction:");
-                System.out.println("1. Vertical.");
-                System.out.println("2. Horizontal.");
-                int direction = scanner.nextInt();
-                if (!isAvailable(x, y, deck, direction, battlefield)) {
-                    System.out.println("Wrong coordinates!");
-                } else {
-                    for (int i = 0; i < deck; i++) {
-                        if (direction == 1) {
-                            battlefield[x][y + i] = 1;
-                        } else {
-                            battlefield[x + i][y] = 1;
-                        }
+
+        while (deck >= 1) {
+            System.out.println();
+            System.out.println(playerName + ", please place your " + deck + "-deck ship on the battlefield:");
+            System.out.println();
+            drawField(battlefield);
+            System.out.println("Please enter OX coordinate:");
+            int x = SCANNER.nextInt();
+            System.out.println("Please enter OY coordinate:");
+            int y = SCANNER.nextInt();
+            System.out.println("Choose direction:");
+            System.out.println("1. Vertical.");
+            System.out.println("2. Horizontal.");
+            int direction = SCANNER.nextInt();
+            if (!isAvailable(x, y, deck, direction, battlefield)) {
+                System.out.println("Wrong coordinates!");
+            } else {
+                for (int i = 0; i < deck; i++) {
+                    if (direction == 1) {
+                        battlefield[x][y + i] = 1;
+                    } else {
+                        battlefield[x + i][y] = 1;
                     }
-                    deck--;
                 }
+                deck--;
             }
-            return;
         }
     }
 
@@ -213,9 +206,9 @@ public class Warship {
             }
 
             System.out.println("Please enter OX coordinate:");
-            i = scanner.nextInt();
+            i = SCANNER.nextInt();
             System.out.println("Please enter OY coordinate:");
-            j = scanner.nextInt();
+            j = SCANNER.nextInt();
             if (battlefield[i][j] != 1) {
                 System.out.println("Miss! Your opponents turn!");
                 monitor[i][j] = 1;
@@ -294,7 +287,7 @@ public class Warship {
     }
 
     static {
-        scanner = new Scanner(System.in);
+        SCANNER = new Scanner(System.in);
         battlefield1 = new int[10][10];
         battlefield2 = new int[10][10];
         monitor1 = new int[10][10];
